@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>โปรแกรมเครื่องคิดเลข</title>
+
+        <!-- JAVASCRIPT -->
+        <script>
+            function display(value) {
+                document.getElementById("result").value += value;
+            }
+        </script>
+
+        <!-- CSS -->
+        <style>
+            td
+            {
+                text-align:center;
+            }
+
+            .button
+            {
+                background-color: #efeeee;
+            }
+
+            .calculator
+            {
+                height: 200px;
+                width: 100px;
+                margin:auto;
+                background-color: #9ed0e9;
+                border: solid #a7bf7e 5px;
+            }
+
+            input[type="text"]
+            {
+                background-color: #f1faeb;
+                border: none;
+                color: black;
+                box-shadow: rgba(0, 0, 0, 0.19) 0px 5px 5px, rgba(0, 0, 0, 0.23) 0px 2px 2px;
+                height: 75%;
+            }
+
+            input[type="button"]
+            {
+                color: black;
+                border: none;
+                width: 100%;
+                height: 80%;
+                border-radius: none;
+                box-shadow: rgba(0, 0, 0, 0.19) 0px 3px 3px, rgba(0, 0, 0, 0.23) 0px 2px 2px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <table class="calculator">
+            <tr>
+                <td colspan="4"><input type="text" id="result"</td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onclick="display('1')" ></td>
+                <td><input type="button" value="2" onclick="display('2')" ></td>
+                <td><input type="button" value="3" onclick="display('3')" </td>
+                <td><input type="button" value="+" onclick="display('+')" style="background-color: #efff94"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="display('4')" ></td>
+                <td><input type="button" value="5" onclick="display('5')" ></td>
+                <td><input type="button" value="6" onclick="display('6')" </td>
+                <td><input type="button" value="-" onclick="display('-')" style="background-color: #efff94"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" onclick="display('7')" ></td>
+                <td><input type="button" value="8" onclick="display('8')" ></td>
+                <td><input type="button" value="9" onclick="display('9')" ></td>
+                <td><input type="button" value="*" onclick="display('*')" style="background-color: #efff94"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="C" onclick="clearScreen()" style="background-color: #fba0a6;"></td>
+                <td><input type="button" value="0" onclick="display('0')" ></td>
+                <td><input type="button" value="=" onclick="display('=')" ></td>
+                <td><input type="button" value="/" onclick="display('/')" style="background-color: #efff94"></td>
+            </tr>
+        </table>
+    </body>
+</html>
